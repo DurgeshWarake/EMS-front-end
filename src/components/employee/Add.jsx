@@ -55,7 +55,7 @@ export default function Add() {
 
     try {
       const response = await axios.post(
-        "https://ems-apis-o83l.vercel.app/api/employee/add",
+        "https://ems-apis.vercel.app/api/employee/add",
         formDataObj,
         {
           headers: {

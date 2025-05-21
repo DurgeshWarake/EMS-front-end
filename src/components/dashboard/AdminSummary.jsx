@@ -19,7 +19,7 @@ const AdminSummary = () => {
     const fetchSummary = async () => {
       try {
         const summary = await axios.get(
-          "https://ems-apis-o83l.vercel.app/api/dashboard/summary",
+          "https://ems-apis.vercel.app/api/dashboard/summary",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

@@ -23,7 +23,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://ems-apis-o83l.vercel.app/api/auth/login",
+        "https://ems-apis.vercel.app/api/auth/login",
         {
           email,
           password,

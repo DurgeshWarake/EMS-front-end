@@ -17,7 +17,7 @@ const EditDepartment = () => {
       setDeptLoading(true);
       try {
         const response = await axios.get(
-          `https://ems-apis-o83l.vercel.app/api/department/${id}`,
+          `https://ems-apis.vercel.app/api/department/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -50,7 +50,7 @@ const EditDepartment = () => {
   const handleSubmit = async (e) => {
     try {
       const response = await axios.put(
-        `https://ems-apis-o83l.vercel.app/api/department/${id}`,
+        `https://ems-apis.vercel.app/api/department/${id}`,
         department,
         {
           headers: {

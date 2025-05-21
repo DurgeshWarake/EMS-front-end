@@ -21,7 +21,7 @@ const AddDepartment = () => {
   const handleSubmit = async (e) => {
     try {
       const response = await axios.post(
-        "https://ems-apis-o83l.vercel.app/api/department/add",
+        "https://ems-apis.vercel.app/api/department/add",
         department,
         {
           headers: {
