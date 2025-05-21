@@ -51,7 +51,7 @@ const Setting = () => {
       // Handle form submission here
       try {
         const response = await axios.put(
-          "https://ems-apis.vercel.app/api/setting/change-password",
+          "https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/setting/change-password",
           setting,
           {
             headers: {

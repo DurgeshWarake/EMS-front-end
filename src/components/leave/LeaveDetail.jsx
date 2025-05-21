@@ -11,7 +11,7 @@ const LeaveDetail = () => {
     const fetchLeave = async () => {
       try {
         const response = await axios.get(
-          `https://ems-apis.vercel.app/api/leave/detail/${id}`,
+          `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/leave/detail/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -35,7 +35,7 @@ const LeaveDetail = () => {
   const changeStatus = async (id, status) => {
     try {
       const response = await axios.put(
-        `https://ems-apis.vercel.app/api/leave/${id}`,
+        `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/leave/${id}`,
         { status: status },
         {
           headers: {
@@ -64,7 +64,7 @@ const LeaveDetail = () => {
               <img
                 src={
                   leave.employeeId.userId.profileImage
-                    ? `https://ems-apis.vercel.app/${leave.employeeId.userId.profileImage}`
+                    ? `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/${leave.employeeId.userId.profileImage}`
                     : leave.employeeId.gender === "female"
                     ? "https://cdn-icons-png.flaticon.com/128/6997/6997662.png"
                     : "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"

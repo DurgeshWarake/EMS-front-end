@@ -21,7 +21,7 @@ const DepartmentList = () => {
       setDeptLoading(true);
       try {
         const response = await axios.get(
-          "https://ems-apis.vercel.app/api/department/",
+          "https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/department/",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

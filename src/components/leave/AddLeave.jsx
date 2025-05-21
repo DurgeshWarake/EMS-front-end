@@ -16,7 +16,7 @@ const AddLeave = () => {
 
     try {
       const response = await axios.post(
-        "https://ems-apis.vercel.app/api/leave/add",
+        "https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/leave/add",
         leave,
         {
           headers: {

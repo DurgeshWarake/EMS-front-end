@@ -13,7 +13,7 @@ const List = () => {
     const fetchEmployees = async () => {
       setEmployeeLoading(true);
       try {
-        const response = await axios.get("https://ems-apis.vercel.app/api/employee", {
+        const response = await axios.get("https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/employee", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -31,7 +31,7 @@ const List = () => {
                   className="w-[35px] h-[35px] rounded-full object-cover"
                   src={
                     emp.userId.profileImage
-                      ? `https://ems-apis.vercel.app/${emp.userId.profileImage}`
+                      ? `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/${emp.userId.profileImage}`
                       : emp.gender === "female"
                       ? "https://cdn-icons-png.flaticon.com/128/6997/6997662.png"
                       : "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
