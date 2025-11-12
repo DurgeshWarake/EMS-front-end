@@ -18,7 +18,7 @@ const View = () => {
   const fetchSalaries = async () => {
     try {
       const response = await axios.get(
-        `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/salary/${id}/${user.role}`,
+        `http://localhost:5000/api/salary/${id}/${user.role}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

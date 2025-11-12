@@ -24,12 +24,14 @@ import Setting from "./components/EmployeeDashboard/Setting";
 import Table from "./components/leave/Table";
 import LeaveDetail from "./components/leave/LeaveDetail";
 import LeaveHistory from "./components/leave/LeaveHistory";
+import Signup from "./pages/Signup";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to={"/admin-dashboard"} />} />
         <Route path="/login" element={<Login />} />
+         <Route path="/signup" element={<Signup />} />
         <Route
           path="/admin-dashboard"
           element={

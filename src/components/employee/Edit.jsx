@@ -27,7 +27,7 @@ export default function Edit() {
     const fetchEmployee = async () => {
       try {
         const response = await axios.get(
-          `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/employee/${id}`,
+          `http://localhost:5000/api/employee/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -68,7 +68,7 @@ export default function Edit() {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/employee/${id}`,
+        `http://localhost:5000/api/employee/${id}`,
         employee,
         {
           headers: {

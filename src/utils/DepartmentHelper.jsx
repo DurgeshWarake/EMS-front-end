@@ -23,7 +23,7 @@ export const DepartmentButtons = ({ _id, onDepartmentDelete }) => {
     try {
       if (confirm) {
         const response = await axios.delete(
-          `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/department/${id}`,
+          `http://localhost:5000/api/department/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

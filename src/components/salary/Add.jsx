@@ -36,7 +36,7 @@ export default function Add() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/salary/add/`,
+        `http://localhost:5000/api/salary/add/`,
         employee,
         {
           headers: {

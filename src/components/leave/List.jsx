@@ -14,7 +14,7 @@ const List = () => {
   const fetchLeaves = async () => {
     try {
       const response = await axios.get(
-        `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/Leave/${id}/${user.role}`,
+        `http://localhost:5000/api/Leave/${id}/${user.role}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

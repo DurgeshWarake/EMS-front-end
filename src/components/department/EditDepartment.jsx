@@ -17,7 +17,7 @@ const EditDepartment = () => {
       setDeptLoading(true);
       try {
         const response = await axios.get(
-          `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/department/${id}`,
+          `http://localhost:5000/api/department/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -50,7 +50,7 @@ const EditDepartment = () => {
   const handleSubmit = async (e) => {
     try {
       const response = await axios.put(
-        `https://ems-apis-dwarake627-gmailcoms-projects.vercel.app/api/department/${id}`,
+        `http://localhost:5000/api/department/${id}`,
         department,
         {
           headers: {
