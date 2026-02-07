@@ -123,12 +123,18 @@ function Login() {
           </a>{" "}
           {/* Forgot password link [8] */}
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center gap-2">
           <button
             type="submit"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" // Button styling: background, hover, text colour, font weight, padding, rounded corners, focus styles, full width [8]
           >
             Login {/* Button text [7] */}
+          </button>
+          <button
+            onClick={() => navigate("/signup")}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" // Button styling: background, hover, text colour, font weight, padding, rounded corners, focus styles, full width [8]
+          >
+            Sign Up {/* Button text [7] */}
           </button>
         </div>
       </form>
