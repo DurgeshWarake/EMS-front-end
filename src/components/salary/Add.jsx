@@ -36,7 +36,7 @@ export default function Add() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/salary/add/`,
+        `${import.meta.env.VITE_API_URL}/api/salary/add/`,
         employee,
         {
           headers: {

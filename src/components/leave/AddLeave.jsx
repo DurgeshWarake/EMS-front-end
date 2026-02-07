@@ -16,7 +16,7 @@ const AddLeave = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/leave/add",
+        `${import.meta.env.VITE_API_URL}/api/leave/add`,
         leave,
         {
           headers: {

@@ -83,7 +83,7 @@ export const getEmployees = async (id) => {
   let employees;
   try {
     const response = await axios.get(
-      `http://localhost:5000/api/employee/department/${id}`,
+      `${import.meta.env.VITE_API_URL}/api/employee/department/${id}`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

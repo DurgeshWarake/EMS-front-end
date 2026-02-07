@@ -25,15 +25,6 @@ const AdminSideBar = () => {
           <span>Dashboard</span>
         </NavLink>
         <NavLink
-          to={"/admin-dashboard/employees"}
-          className={`${
-            activeRoute === "/admin-dashboard/employees" ? "bg-teal-500" : " "
-          } ${linkStyle}`}
-        >
-          <FaTachometerAlt />
-          <span>Employees</span>
-        </NavLink>
-        <NavLink
           to={"/admin-dashboard/departments"}
           className={`${
             activeRoute === "/admin-dashboard/departments" ? "bg-teal-500" : " "
@@ -41,6 +32,15 @@ const AdminSideBar = () => {
         >
           <FaTachometerAlt />
           <span>Department</span>
+        </NavLink>
+          <NavLink
+          to={"/admin-dashboard/employees"}
+          className={`${
+            activeRoute === "/admin-dashboard/employees" ? "bg-teal-500" : " "
+          } ${linkStyle}`}
+        >
+          <FaTachometerAlt />
+          <span>Employees</span>
         </NavLink>
         <NavLink
           to={"/admin-dashboard/leaves"}

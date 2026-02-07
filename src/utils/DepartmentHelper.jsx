@@ -23,7 +23,7 @@ export const DepartmentButtons = ({ _id, onDepartmentDelete }) => {
     try {
       if (confirm) {
         const response = await axios.delete(
-          `http://localhost:5000/api/department/${id}`,
+          `${import.meta.env.VITE_API_URL}/api/department/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
